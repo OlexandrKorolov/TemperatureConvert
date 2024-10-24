@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    border: 1px solid lightgray;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 600px;
+    background-color: rgba(255, 255, 255, 50%);
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px rgba(134, 134, 134, 0.3);
+}
+
+.item-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.item-col {
+    border-bottom: lightgray solid 1px;
+}
+
+input {
+    padding: 5px 5px 5px 5px;
+    width: 70px;
+    font-size: 18px;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    transition: border-bottom-color 0.5s ease, transform 0.3s ease;
+    transform-origin: left;
+}
+
+.input-num {
+    width: 70px;
+}
+
+.input-num input:focus {
+    outline: none;
+    border-bottom: 2px solid #8EC5FC;
+    transform: scaleX(1);
+}
+
+select {
+    margin-left: 90px;
+    padding: 5px;
+    width: 210px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+}
+
+.symbol-equals {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.res {
+    text-align: right;
+    width: 120px;
+}
+
+.res p {
+    font-size: 18px;
+
+}
+
+.button-count {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin-top: 30px;
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 1px solid lightgray;
+    border-radius: 50px;
+    background-color: white;
+    transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease-out;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #ef85b2,#e16fc1,#c462d7,#8c5ff0);
+    color: white;
+    width: 130px;
+    transform: scale(1.1);
+    cursor: pointer;
+}

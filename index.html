@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер температури</title>
+    <link rel="shortcut icon" href="./assets/images/Logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="main">
+    <div class="container">
+        <div class="item-row">
+            <div class="input-num">
+                <label>
+                    <input id="inputValue" placeholder="Число" value="">
+                </label>
+            </div>
+            <div class="options">
+                <label>
+                    <select>
+                        <option value="CtoF" selected="selected">Цельсія - Фарангейт</option>
+                        <option value="FtoC">Фарангейт - Цельсія</option>
+                    </select>
+                </label>
+            </div>
+            <div class="symbol-equals">=</div>
+            <div class="res">
+                <p id="total-res">0</p>
+            </div>
+        </div>
+        <div class="button-count">
+            <button onclick="convertTemperatureFC()">Обчислити</button>
+        </div>
+    </div>
+</main>
+<script src="./js/main.js"></script>
+</body>
+</html>
